@@ -1,0 +1,23 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\JP\\Automotive C",
+            "binaryPath": "c:\\Users\\JP\\Automotive C\\main.exe",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "c:\\Users\\jp_mo\\Automotive C\\Automotive-C",
+            "binaryPath": "c:\\Users\\jp_mo\\Automotive C\\Automotive-C\\main.exe",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "c:\\Users\\jp_mo\\Automotive C\\Inlamningsuppgift2",
+            "binaryPath": "c:\\Users\\jp_mo\\Automotive C\\Inlamningsuppgift2\\main.exe",
+            "binaryArgs": []
+        }
+    ],
+    "C_Cpp.errorSquiggles": "disabled",
+    "notebook.editorOptionsCustomizations": {
+
+    }
+}

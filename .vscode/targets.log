@@ -1,0 +1,362 @@
+C:\msys64\mingw64\bin\mingw32-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.4
+# Built for Windows32
+# Copyright (C) 1988-2022 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Mar 23 18:50:15 2023
+
+# Variables
+
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 3)
+SRC = main.c card_reader.c
+# environment
+USERPROFILE = C:\Users\jp_mo
+# environment
+LOCALAPPDATA = C:\Users\jp_mo\AppData\Local
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# environment
+VSCODE_CWD = C:\Users\jp_mo\AppData\Local\Programs\Microsoft VS Code
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+SYSTEMROOT = C:\WINDOWS
+# makefile (from 'Makefile', line 6)
+LIBS = 
+# environment
+PROCESSOR_LEVEL = 23
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := C:/msys64/mingw64/bin/mingw32-make.exe
+# environment
+GOPATH = C:\Users\jp_mo\go
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_7260_LRPUNAJVCAGTJIPT
+# environment
+CLOUDSDK_METRICS_ENVIRONMENT_VERSION = 1.21.3
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\jp_mo\AppData\Roaming\Code\CachedData\ee2b180d582a7f601fa6ecfdad8d9fd269ab1884
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = C:\Users\jp_mo\AppData\Local\Temp
+# default
+.INCLUDE_DIRS := .
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\jp_mo\OneDrive
+# environment
+INTELLIJ IDEA COMMUNITY EDITION = C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.1\bin;
+# environment
+POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Home
+# makefile
+CURDIR := c:/Users/jp_mo/Automotive C/Inlamningsuppgift2
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 7260
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"sv-se","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := Windows32
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := sh.exe
+# environment
+HOMEPATH = \Users\jp_mo
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = C:\Users\jp_mo\AppData\Local\cloud-code\installer\google-cloud-sdk\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Users\jp_mo\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jp_mo\AppData\Local\Programs\Python\Python310\;C:\Program Files (x86)\ActiveState Komodo IDE 12\;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\ProgramData\chocolatey\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Go\bin;C:\Program Files\PowerShell\7\;C:\msys64\mingw64\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7-preview\preview;C:\Users\jp_mo\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\jp_mo\AppData\Local\Programs\Python\Python311\;C:\Users\jp_mo\AppData\Local\activestate\cache\bin;C:\Users\jp_mo\AppData\Local\ActiveState\StateTool\release;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\jp_mo\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1\bin;C:\Users\jp_mo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jp_mo\AppData\Local\GitHubDesktop\bin;C:\Users\jp_mo\.dotnet\tools;C:\Users\jp_mo\AppData\Local\atom\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.1\bin;;C:\Users\jp_mo\AppData\Local\Microsoft\WindowsApps;C:\Users\jp_mo\go\bin;C:\Users\jp_mo\AppData\Roaming\npm;C:\Users\jp_mo\.dotnet\tools;C:\Users\jp_mo\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\Google\Cloud SDK\google-cloud-sdk\bin
+# environment
+COMPUTERNAME = HUAWEI-MATEBOOK
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132953891474359489
+# environment
+LOGONSERVER = \\HUAWEI-MATEBOOK
+# makefile (from 'Makefile', line 2)
+TEST_PROG = test_main.exe
+# environment
+USERNAME = jp_mo
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# makefile (from 'Makefile', line 1)
+PROG = main.exe
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = HUAWEI-MATEBOOK
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# makefile
+.DEFAULT_GOAL := all
+# default
+MAKE_VERSION := 4.4
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = HUAWEI-MATEBOOK
+# environment
+NUMBER_OF_PROCESSORS = 16
+# environment
+PUBLIC = C:\Users\Public
+# environment
+APPDATA = C:\Users\jp_mo\AppData\Roaming
+# makefile (from 'Makefile', line 5)
+CFLAGS = -g
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1\bin;
+# environment
+EFC_10800 = 1
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = C:\Users\jp_mo\AppData\Local\Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\8b78d1671a5a6e2574a8a7325e20870d-1.76.2-main-sock
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+VSCODE_CRASH_REPORTER_SANDBOXED_HINT = 1
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# environment
+CLOUDSDK_METRICS_ENVIRONMENT = cloudcode.vscode
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs notintermediate shell-export archives jobserver output-sync load
+# makefile (from 'Makefile', line 4)
+TEST_SRC = test_card_reader.c card_reader.c
+# environment
+PROCESSOR_REVISION = 6001
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+# variable set hash-table stats:
+# Load=104/1024=10%, Rehash=0, Collisions=13/148=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (key c:/Users/jp_mo/Automotive C/Inlamningsuppgift2, mtime 1679586631): 12 files, no impossibilities.
+
+# 12 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+main.exe: main.c card_reader.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := main.exe
+# automatic
+# * := 
+# automatic
+# < := main.c
+# automatic
+# + := main.c card_reader.c
+# automatic
+# % := 
+# automatic
+# ^ := main.c card_reader.c
+# automatic
+# ? := main.c card_reader.c
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=5/17=29%
+#  recipe to execute (from 'Makefile', line 13):
+	$(CC) -o $@ $(CFLAGS) $(LDFLAGS) $(SRC) $(LIBS)
+
+# Not a target:
+card_reader.c:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-03-23 16:59:13
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+test_card_reader.c:
+#  Implicit rule search has not been done.
+#  Modification time never  
+checked.
+#  File has not been updated.
+
+test_main.exe: test_card_reader.c card_reader.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 16):
+	$(CC) -o $@ $(CFLAGS) $(LDFLAGS) $(TEST_SRC) $(LIBS)
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-03-23 16:57:19
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 19):
+	rm -f $(PROG) $(TEST_PROG)
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: main.exe
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+
+# Not a target:
+main.c:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-03-23 16:34:39
+#  File has been updated.
+#  Successfully updated.
+
+test: test_main.exe
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all clean test
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=12/1024=1%, Rehash=0, Collisions=0/36=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 20 / storage = 190 B / avg = 9 B
+# current buf: size = 8162 B / used = 190 B / count = 20 / avg = 9 B
+
+# strcache performance: lookups = 42 / hit rate = 52%
+# hash-table stats:
+# Load=20/8192=0%, Rehash=0, Collisions=0/42=0%
+# Finished Make data base on Thu Mar 23 18:50:15 2023
+
+ 
