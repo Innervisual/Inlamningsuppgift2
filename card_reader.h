@@ -14,6 +14,9 @@ typedef struct {
     int capacity;
 } CardsList;
 
+int waitForInputWithTimeout(int milliseconds);
+
+void readCardList(CardsList *cardsList);
 void initCardsList(CardsList *cardsList);
 void freeCardsList(CardsList *cardsList);
 void addCard(Card *card, CardsList *cardsList);

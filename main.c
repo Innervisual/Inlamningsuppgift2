@@ -3,10 +3,16 @@
 #include <stdbool.h>
 #include <time.h>
 #include "card_reader.h"
+#include <winsock2.h>
+#include <windows.h>
+#include <conio.h>
+
 
 int main() {
     CardsList cardsList;
     initCardsList(&cardsList);
+
+    readCardList(&cardsList);
 
     while (1) {
         printf("\nMenu:\n");
@@ -22,7 +28,7 @@ int main() {
 
         if (choice == 1) {
             printf("CURRENTLY LAMP IS: Green\n");
-            delay(3);
+            Sleep(3);
         } else if (choice == 2) {
             listAllCards(&cardsList);
         } else if (choice == 3) {
@@ -51,16 +57,25 @@ int main() {
                 addCardToFile(&newCard);
             }
         } else if (choice == 4) {
-            break;
+            return 0; // Exit the program
         } else if (choice == 9) {
             printf("Please scan card to enter or X to go back to admin mode.\n");
-            // Perform fake card scanning here
-        } else {
-            printf("Invalid choice. Please try again.\n");
-        }
-    }
+            int inputAvailable = waitForInputWithTimeout(5000);
 
-    freeCardsList(&cardsList);
+            if (inputAvailable > 0) {
+                char input = getchar();
+                getchar(); // Consume the newline character
+                if (input == 'X' || input == 'x') {
+                    // Do nothing, it will automatically go back to the admin mode
+            }
+            }
+        } else {
+            printf("Timeout, going back to the admin mode.\n");
+    }
+}
+
+
+    //freeCardsList(&cardsList);
     return 0;
 }
 

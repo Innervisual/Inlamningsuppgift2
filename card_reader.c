@@ -1,4 +1,4 @@
-#include <stdio.h>
+/* #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,6 +10,23 @@ void printCardDetails(Card *card) {
     printf("Access: %s\n", card->access ? "Yes" : "No");
     printf("Added to system: %s\n", card->timeAddedStr);
 }
+ */
+
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include "card_reader.h"
+#include <conio.h>
+#include <windows.h>
+
+void printCardDetails(Card *card) {
+    printf("Card number: %04d\n", card->cardNumber);
+    printf("Access: %s\n", card->access ? "Yes" : "No");
+    printf("Added to system: %s\n", card->timeAddedStr);
+}
+
 
 Card *findCard(int cardNum, CardsList *cardsList) {
     for (int i = 0; i < cardsList->count; i++) {
@@ -77,20 +94,57 @@ void initCardsList(CardsList *cardsList) {
 
 // ... (rest of the code remains the same)
 
-void delay(int milliseconds) {
-    // Add the implementation for the delay function
+int waitForInputWithTimeout(int milliseconds) {
+    int startTime = GetTickCount();
+    int elapsedTime = 0;
+
+    while (elapsedTime < milliseconds) {
+        if (_kbhit()) {
+            return 1;
+        }
+
+        Sleep(100);
+        elapsedTime = GetTickCount() - startTime;
+    }
+
+    return 0;
 }
+
 
 void listAllCards(CardsList *cardsList) {
-    // Add the implementation for the listAllCards function
+    if (cardsList->count == 0) {
+        printf("No cards found in the system.\n");
+    } else {
+        for (int i = 0; i < cardsList->count; i++) {
+            printCardDetails(&cardsList->cards[i]);
+        }
+    }
 }
+
+
 
 void addCard(Card *card, CardsList *cardsList) {
-    // Add the implementation for the addCard function
+    if (cardsList->count == cardsList->capacity) {
+        cardsList->capacity *= 2;
+        cardsList->cards = realloc(cardsList->cards, sizeof(Card) * cardsList->capacity);
+    }
+    cardsList->cards[cardsList->count] = *card;
+    cardsList->count++;
 }
-
+/*
 void freeCardsList(CardsList *cardsList) {
     // The freeCardsList function is not necessary as the CardsList struct doesn't use dynamic memory allocation
     // You can remove references to this function from the rest of the code
 }
 
+
+void readCardList(CardsList *cardsList) {
+    // ... (rest of the code remains the same)
+}
+
+void initCardsList(CardsList *cardsList) {
+    cardsList->count = 0;
+    cardsList->capacity = 10;
+    cardsList->cards = malloc(sizeof(Card) * cardsList->capacity);
+}
+*/
