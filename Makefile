@@ -9,6 +9,13 @@ all: $(PROG)
 
 test: $(TEST_PROG)
 
+test_card_reader.exe: test_card_reader.c card_reader.c
+	cc -o test_card_reader.exe -g test_card_reader.c card_reader.c
+
+test: test_card_reader.exe
+	./test_card_reader.exe
+
+
 $(PROG): $(SRC)
 	$(CC) -o $@ $(CFLAGS) $(LDFLAGS) $(SRC) $(LIBS)
 
