@@ -1,17 +1,3 @@
-/* #include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-#include "card_reader.h"
-
-void printCardDetails(Card *card) {
-    printf("Card number: %04d\n", card->cardNumber);
-    printf("Access: %s\n", card->access ? "Yes" : "No");
-    printf("Added to system: %s\n", card->timeAddedStr);
-}
- */
-
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -92,7 +78,7 @@ void initCardsList(CardsList *cardsList) {
     cardsList->cards = malloc(sizeof(Card) * cardsList->capacity);
 }
 
-// ... (rest of the code remains the same)
+
 
 int waitForInputWithTimeout(int milliseconds) {
     int startTime = GetTickCount();
@@ -131,20 +117,3 @@ void addCard(Card *card, CardsList *cardsList) {
     cardsList->cards[cardsList->count] = *card;
     cardsList->count++;
 }
-/*
-void freeCardsList(CardsList *cardsList) {
-    // The freeCardsList function is not necessary as the CardsList struct doesn't use dynamic memory allocation
-    // You can remove references to this function from the rest of the code
-}
-
-
-void readCardList(CardsList *cardsList) {
-    // ... (rest of the code remains the same)
-}
-
-void initCardsList(CardsList *cardsList) {
-    cardsList->count = 0;
-    cardsList->capacity = 10;
-    cardsList->cards = malloc(sizeof(Card) * cardsList->capacity);
-}
-*/
