@@ -82,6 +82,19 @@ void initCardsList(CardsList *cardsList) {
     cardsList->cards = malloc(sizeof(Card) * cardsList->capacity);
 }
 
+void printLampStatus(LampStatus status) {
+    switch (status) {
+        case LAMP_OFF:
+            printf("CURRENTLY LAMP IS: Off\n");
+            break;
+        case LAMP_GREEN:
+            printf("CURRENTLY LAMP IS: Green\n");
+            break;
+        case LAMP_RED:
+            printf("CURRENTLY LAMP IS: Red\n");
+            break;
+    }
+}
 
 
 int waitForInputWithTimeout(int milliseconds) {

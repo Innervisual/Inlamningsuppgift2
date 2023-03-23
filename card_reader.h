@@ -14,8 +14,15 @@ typedef struct {
     int capacity;
 } CardsList;
 
+typedef enum {
+    LAMP_OFF,
+    LAMP_GREEN,
+    LAMP_RED
+} LampStatus;
+
 int waitForInputWithTimeout(int milliseconds);
 
+void printLampStatus(LampStatus status);
 //void readCardList(CardsList *cardsList);
 void readCardList(CardsList *cardsList, const char *filename);
 void initCardsList(CardsList *cardsList);

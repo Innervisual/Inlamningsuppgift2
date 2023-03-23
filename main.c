@@ -60,20 +60,32 @@ int main() {
             return 0; // Exit the program
         } else if (choice == 9) {
             printf("Please scan card to enter or X to go back to admin mode.\n");
-            int inputAvailable = waitForInputWithTimeout(5000);
+            LampStatus lampStatus = LAMP_OFF;
+            printLampStatus(lampStatus);
 
-            if (inputAvailable > 0) {
-                char input = getchar();
-                getchar(); // Consume the newline character
-                if (input == 'X' || input == 'x') {
-                    // Do nothing, it will automatically go back to the admin mode
-            }
+            int cardNumber;
+            char input[10];
+            while (1) {
+                if (waitForInputWithTimeout(1000)) {
+                    fgets(input, sizeof(input), stdin);
+                    input[strcspn(input, "\n")] = '\0'; // Remove newline character
+                    if (input[0] == 'X' || input[0] == 'x') {
+                        break;
+                    } else if (sscanf(input, "%d", &cardNumber) == 1) {
+                        Card *card = findCard(cardNumber, &cardsList);
+                        if (card != NULL && card->access) {
+                            lampStatus = LAMP_GREEN;
+                        } else {
+                            lampStatus = LAMP_RED;
+                        }
+                        printLampStatus(lampStatus);
+                    }
+                }
             }
         } else {
             printf("Timeout, going back to the admin mode.\n");
+        }
     }
-}
-
 
     //freeCardsList(&cardsList);
     return 0;
