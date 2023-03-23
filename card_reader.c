@@ -23,8 +23,10 @@ Card *findCard(int cardNum, CardsList *cardsList) {
     return NULL;
 }
 
-void addCardToFile(Card *card) {
-    FILE *file = fopen("cards.txt", "a");
+//void addCardToFile(Card *card) {
+//    FILE *file = fopen("cards.txt", "a");
+void addCardToFile(Card *card, const char *filename) {
+    FILE *file = fopen(filename, "a");
     if (!file) {
         printf("Error opening file.\n");
         return;
@@ -53,8 +55,10 @@ void updateCardInFile(Card *card) {
     fclose(file);
 }
 
-void readCardList(CardsList *cardsList) {
-    FILE *file = fopen("cards.txt", "r");
+//void readCardList(CardsList *cardsList) {
+//    FILE *file = fopen("cards.txt", "r");
+void readCardList(CardsList *cardsList, const char *filename) {
+    FILE *file = fopen(filename, "r");
     if (!file) {
         printf("Error opening file.\n");
         return;

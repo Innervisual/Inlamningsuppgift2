@@ -18,7 +18,7 @@ void test_findCard() {
     }
 }
 
-void test_addCardToFile_and_readCardList() {
+/*void test_addCardToFile_and_readCardList() {
     CardsList testList;
     initCardsList(&testList);
 
@@ -26,6 +26,16 @@ void test_addCardToFile_and_readCardList() {
     addCardToFile(&testCard);
 
     readCardList(&testList);
+*/
+
+void test_addCardToFile_and_readCardList() {
+    CardsList testList;
+    initCardsList(&testList);
+
+    Card testCard = {1213, false, "2019-10-19"};
+    addCardToFile(&testCard, "test_cards.txt");
+
+    readCardList(&testList, "test_cards.txt");
     Card *foundCard = findCard(1213, &testList);
     if (foundCard != NULL && foundCard->cardNumber == 1213) {
         printf("Test addCardToFile and readCardList: SUCCESS\n");
@@ -34,7 +44,7 @@ void test_addCardToFile_and_readCardList() {
     }
 }
 
-int test_main() {
+int main() {
     test_findCard();
     test_addCardToFile_and_readCardList();
     return 0;

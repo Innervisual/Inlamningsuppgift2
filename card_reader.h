@@ -16,11 +16,13 @@ typedef struct {
 
 int waitForInputWithTimeout(int milliseconds);
 
-void readCardList(CardsList *cardsList);
+//void readCardList(CardsList *cardsList);
+void readCardList(CardsList *cardsList, const char *filename);
 void initCardsList(CardsList *cardsList);
 void freeCardsList(CardsList *cardsList);
 void addCard(Card *card, CardsList *cardsList);
-void addCardToFile(Card *card);
+//void addCardToFile(Card *card);
+void addCardToFile(Card *card, const char *filename);
 void listAllCards(CardsList *cardsList);
 void printCardDetails(Card *card);
 Card *findCard(int cardNum, CardsList *cardsList);

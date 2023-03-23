@@ -12,7 +12,7 @@ int main() {
     CardsList cardsList;
     initCardsList(&cardsList);
 
-    readCardList(&cardsList);
+    readCardList(&cardsList, "cards.txt");
 
     while (1) {
         printf("\nMenu:\n");
@@ -54,7 +54,7 @@ int main() {
                 struct tm *date_info = localtime(&timer);
                 strftime(newCard.timeAddedStr, sizeof(newCard.timeAddedStr), "%Y-%m-%d", date_info);
                 addCard(&newCard, &cardsList);
-                addCardToFile(&newCard);
+                addCardToFile(&newCard, "cards.txt");
             }
         } else if (choice == 4) {
             return 0; // Exit the program
