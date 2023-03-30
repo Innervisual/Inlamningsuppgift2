@@ -6,7 +6,7 @@ C:\msys64\mingw64\bin\mingw32-make.exe all --print-data-base --no-builtin-variab
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Mar 23 23:33:58 2023
+# Make data base, printed on Thu Mar 30 16:47:56 2023
 
 # Variables
 
@@ -15,7 +15,7 @@ SYSTEMDRIVE = C:
 # environment
 LC_ALL = C
 # makefile (from 'Makefile', line 3)
-SRC = main.c card_reader.c
+SRC = main.c card_reader.c safeinput.c
 # environment
 USERPROFILE = C:\Users\jp_mo
 # environment
@@ -41,7 +41,7 @@ GOPATH = C:\Users\jp_mo\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_1120_QLNQOZAMZRXZBCLL
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_5168_VETTZHCPUJXBAALZ
 # environment
 CLOUDSDK_METRICS_ENVIRONMENT_VERSION = 1.21.3
 # environment
@@ -76,8 +76,6 @@ POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Home
 CURDIR := c:/Users/jp_mo/Automotive C/Inlamningsuppgift2
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# environment
-VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -87,8 +85,6 @@ MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
 # environment
-CLOUDSDK_PYTHON = C:\Users\jp_mo\AppData\Local\Temp\tmpnra74tr9\python\python.exe
-# environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
 +D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
@@ -97,7 +93,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 1120
+VSCODE_PID = 5168
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -215,13 +211,13 @@ CLOUDSDK_METRICS_ENVIRONMENT = cloudcode.vscode
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs notintermediate shell-export archives jobserver output-sync load
 # makefile (from 'Makefile', line 4)
-TEST_SRC = test_card_reader.c card_reader.c
+TEST_SRC = test_card_reader.c card_reader.c safeinput.c
 # environment
 PROCESSOR_REVISION = 6001
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
-# Load=105/1024=10%, Rehash=0, Collisions=13/149=9%
+# Load=103/1024=10%, Rehash=0, Collisions=12/147=8%
 
 # Pattern-specific Variable Values
 
@@ -229,9 +225,9 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 
 # Directories
 
-# . (key c:/Users/jp_mo/Automotive C/Inlamningsuppgift2, mtime 1679605907): 15 files, no impossibilities.
+# . (key c:/Users/jp_mo/Automotive C/Inlamningsuppgift2, mtime 1680185471): 20 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -239,10 +235,10 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 
 # Files
 
-main.exe: main.c card_reader.c
+main.exe: main.c card_reader.c safeinput.c
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
-#  Last modified 2023-03-23 22:06:32
+#  Last modified 2023-03-30 16:11:11
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # automatic
@@ -252,25 +248,25 @@ main.exe: main.c card_reader.c
 # automatic
 # < := main.c
 # automatic
-# + := main.c card_reader.c
+# + := main.c card_reader.c safeinput.c
 # automatic
 # % := 
 # automatic
-# ^ := main.c card_reader.c
+# ^ := main.c card_reader.c safeinput.c
 # automatic
-# ? := card_reader.c
+# ? := main.c safeinput.c
 # automatic
 # | := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=5/17=29%
-#  recipe to execute (from 'Makefile', line 20):
+#  recipe to execute (from 'Makefile', line 19):
 	$(CC) -o $@ $(CFLAGS) $(LDFLAGS) $(SRC) $(LIBS)
 
 # Not a target:
 card_reader.c:
 #  Implicit rule search has been done.
 #  File is secondary (prerequisite of .SECONDARY).
-#  Last modified 2023-03-23 23:17:55
+#  Last modified 2023-03-24 01:27:15
 #  File has been updated.
 #  Successfully updated.
 
@@ -280,18 +276,26 @@ test_card_reader.c:
 #  Modification time never checked.
 #  File has not been updated.
 
-test_main.exe: test_card_reader.c card_reader.c
+test_main.exe: test_card_reader.c card_reader.c safeinput.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 23):
+#  recipe to execute (from 'Makefile', line 22):
 	$(CC) -o $@ $(CFLAGS) $(LDFLAGS) $(TEST_SRC) $(LIBS)
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
 #  File is secondary (prerequisite of .SECONDARY).
-#  Last modified 2023-03-23 23:31:14
+#  Last modified 2023-03-30 15:34:29
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+safeinput.c:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-03-30 16:24:08
 #  File has been updated.
 #  Successfully updated.
 
@@ -300,7 +304,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 26):
+#  recipe to execute (from 'Makefile', line 25):
 	rm -f $(PROG) $(TEST_PROG)
 
 # Not a target:
@@ -323,16 +327,16 @@ all: main.exe
 main.c:
 #  Implicit rule search has been done.
 #  File is secondary (prerequisite of .SECONDARY).
-#  Last modified 2023-03-23 22:06:25
+#  Last modified 2023-03-30 16:47:18
 #  File has been updated.
 #  Successfully updated.
 
-test_card_reader.exe: test_card_reader.c card_reader.c
+test_card_reader.exe: test_card_reader.c card_reader.c safeinput.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 13):
-	cc -o test_card_reader.exe -g test_card_reader.c card_reader.c
+	cc -o test_card_reader.exe -g test_card_reader.c card_reader.c safeinput.c
 
 test: test_card_reader.exe test_main.exe
 #  Phony target (prerequisite of .PHONY).
@@ -344,8 +348,7 @@ test: test_card_reader.exe test_main.exe
 
 # Not a target:
 .SUFFIXES:
-#  Implicit rule search has not 
- been done.
+#  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -355,19 +358,19 @@ test: test_card_reader.exe test_main.exe
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/41=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/45=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 226 B / avg = 9 B
-# current buf: size = 8162 B / used = 226 B / count = 23 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 265 B / avg = 10 B
+# current buf: size = 8162 B / used = 265 B / count = 26 / avg = 10 B
 
-# strcache performance: lookups = 52 / hit rate = 55%
+# strcache performance: lookups = 60 / hit rate = 56%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=0/52=0%
-# Finished Make data base on Thu Mar 23 23:33:58 2023
+# Load=26/8192=0%, Rehash=0, Collisions=0/60=0%
+# Finished Make data base on Thu Mar 30 16:47:56 2023
 
  

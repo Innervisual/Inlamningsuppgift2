@@ -6,7 +6,11 @@
 #include <winsock2.h>
 #include <windows.h>
 #include <conio.h>
+#include "safeinput.h" // Include the new header
 
+void invalidInputCallback() {
+    printf("Invalid input, Please choose a valid option. \n");
+}
 
 int main() {
     CardsList cardsList;
@@ -23,8 +27,8 @@ int main() {
         printf("9. FAKE TEST SCAN CARD\n");
         printf("Enter your choice: ");
 
-        int choice;
-        scanf("%d", &choice);
+        int choice = readIntWithCallback(invalidInputCallback);
+
 
         if (choice == 1) {
             printf("CURRENTLY LAMP IS: Green\n");
@@ -33,22 +37,19 @@ int main() {
             listAllCards(&cardsList);
         } else if (choice == 3) {
             printf("Enter card number: ");
-            int cardNum;
-            scanf("%d", &cardNum);
+            int cardNum = readInt();
             Card *foundCard = findCard(cardNum, &cardsList);
             if (foundCard) {
                 printCardDetails(foundCard);
                 printf("Enter 1 for access, 2 for no access: ");
-                int access;
-                scanf("%d", &access);
+                int access = readInt();
                 foundCard->access = access == 1;
                 updateCardInFile(foundCard);
             } else {
                 Card newCard;
                 newCard.cardNumber = cardNum;
                 printf("Enter 1 for access, 2 for no access: ");
-                int access;
-                scanf("%d", &access);
+                int access = readInt();
                 newCard.access = access == 1;
                 time_t timer = time(NULL);
                 struct tm *date_info = localtime(&timer);
@@ -64,30 +65,27 @@ int main() {
             printLampStatus(lampStatus);
 
             int cardNumber;
-            char input[10];
             while (1) {
-                if (waitForInputWithTimeout(1000)) {
-                    fgets(input, sizeof(input), stdin);
-                    input[strcspn(input, "\n")] = '\0'; // Remove newline character
-                    if (input[0] == 'X' || input[0] == 'x') {
-                        break;
-                    } else if (sscanf(input, "%d", &cardNumber) == 1) {
-                        Card *card = findCard(cardNumber, &cardsList);
-                        if (card != NULL && card->access) {
-                            lampStatus = LAMP_GREEN;
-                        } else {
-                            lampStatus = LAMP_RED;
-                        }
-                        printLampStatus(lampStatus);
-                    }
+                cardNumber = readIntWithCallbackAndExitChar(invalidInputCallback, 'x');
+                if (cardNumber == -1) {
+                    break;
                 }
+                Card *card = findCard(cardNumber, &cardsList);
+                if (card != NULL && card->access) {
+                    lampStatus = LAMP_GREEN;
+                } else {
+                    lampStatus = LAMP_RED;
+                }
+                printLampStatus(lampStatus);
             }
         } else {
-            printf("Timeout, going back to the admin mode.\n");
+            printf("Invalid input, going back to the admin mode.\n");
         }
     }
 
     //freeCardsList(&cardsList);
     return 0;
 }
+
+
 
