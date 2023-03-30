@@ -1,5 +1,8 @@
 C:\msys64\mingw64\bin\mingw32-make.exe --dry-run --always-make --keep-going --print-directory
 mingw32-make: Entering directory 'c:/Users/jp_mo/Automotive C/Inlamningsuppgift2'
-cc -o main.exe -g  main.c card_reader.c safeinput.c 
+cc -c -o main.o main.c -O3 -Wall -Werror
+cc -c -o card_reader.o card_reader.c -O3 -Wall -Werror
+cc -c -o safeinput.o safeinput.c -O3 -Wall -Werror
+cc -o main.exe -O3 -Wall -Werror  main.o card_reader.o safeinput.o 
 mingw32-make: Leaving directory 'c:/Users/jp_mo/Automotive C/Inlamningsuppgift2'
  

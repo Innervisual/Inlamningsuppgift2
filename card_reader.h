@@ -4,7 +4,7 @@
 
 typedef struct {
     int cardNumber;
-    bool access;
+    int access; // Change this line
     char timeAddedStr[26];
 } Card;
 

@@ -23,8 +23,6 @@ Card *findCard(int cardNum, CardsList *cardsList) {
     return NULL;
 }
 
-//void addCardToFile(Card *card) {
-//    FILE *file = fopen("cards.txt", "a");
 void addCardToFile(Card *card, const char *filename) {
     FILE *file = fopen(filename, "a");
     if (!file) {
@@ -43,7 +41,7 @@ void updateCardInFile(Card *card) {
     }
 
     int cardNum;
-    bool access;
+    int access;
     char timeAddedStr[26];
     while (fscanf(file, "%d %d %s", &cardNum, &access, timeAddedStr) != EOF) {
         if (cardNum == card->cardNumber) {
@@ -55,8 +53,6 @@ void updateCardInFile(Card *card) {
     fclose(file);
 }
 
-//void readCardList(CardsList *cardsList) {
-//    FILE *file = fopen("cards.txt", "r");
 void readCardList(CardsList *cardsList, const char *filename) {
     FILE *file = fopen(filename, "r");
     if (!file) {
@@ -114,6 +110,7 @@ int waitForInputWithTimeout(int milliseconds) {
 }
 
 
+
 void listAllCards(CardsList *cardsList) {
     if (cardsList->count == 0) {
         printf("No cards found in the system.\n");
@@ -123,7 +120,6 @@ void listAllCards(CardsList *cardsList) {
         }
     }
 }
-
 
 
 void addCard(Card *card, CardsList *cardsList) {

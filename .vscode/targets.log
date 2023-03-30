@@ -6,12 +6,14 @@ C:\msys64\mingw64\bin\mingw32-make.exe all --print-data-base --no-builtin-variab
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Mar 30 16:47:56 2023
+# Make data base, printed on Thu Mar 30 20:10:25 2023
 
 # Variables
 
 # environment
 SYSTEMDRIVE = C:
+# makefile (from 'Makefile', line 4)
+OBJ = main.o card_reader.o safeinput.o
 # environment
 LC_ALL = C
 # makefile (from 'Makefile', line 3)
@@ -28,8 +30,6 @@ VSCODE_CWD = C:\Users\jp_mo\AppData\Local\Programs\Microsoft VS Code
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
 SYSTEMROOT = C:\WINDOWS
-# makefile (from 'Makefile', line 6)
-LIBS = 
 # environment
 PROCESSOR_LEVEL = 23
 # environment
@@ -41,7 +41,7 @@ GOPATH = C:\Users\jp_mo\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_5168_VETTZHCPUJXBAALZ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_37284_MTIYIDETRQYKZRBU
 # environment
 CLOUDSDK_METRICS_ENVIRONMENT_VERSION = 1.21.3
 # environment
@@ -70,12 +70,16 @@ MAKEFLAGS = pqrR
 ONEDRIVE = C:\Users\jp_mo\OneDrive
 # environment
 INTELLIJ IDEA COMMUNITY EDITION = C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.1\bin;
+# makefile (from 'Makefile', line 8)
+CFLAGS2 = -g -Wall -Werror
 # environment
 POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Home
 # makefile
 CURDIR := c:/Users/jp_mo/Automotive C/Inlamningsuppgift2
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -93,7 +97,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 5168
+VSCODE_PID = 37284
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -134,6 +138,8 @@ MAKEFILES :=
 PROMPT = $P$G
 # environment
 CHOCOLATEYLASTPATHUPDATE = 132953891474359489
+# makefile (from 'Makefile', line 11)
+LIBGTEST = C:\msys64\mingw64\lib\libgtest_main.a C:\msys64\mingw64\lib\libgtest.a
 # environment
 LOGONSERVER = \\HUAWEI-MATEBOOK
 # makefile (from 'Makefile', line 2)
@@ -160,6 +166,8 @@ USERDOMAIN = HUAWEI-MATEBOOK
 GNUMAKEFLAGS := 
 # environment
 OS = Windows_NT
+# makefile (from 'Makefile', line 6)
+TEST_OBJ = test_card_reader.o card_reader.o safeinput.o
 # makefile
 .DEFAULT_GOAL := all
 # default
@@ -174,8 +182,8 @@ NUMBER_OF_PROCESSORS = 16
 PUBLIC = C:\Users\Public
 # environment
 APPDATA = C:\Users\jp_mo\AppData\Roaming
-# makefile (from 'Makefile', line 5)
-CFLAGS = -g
+# makefile (from 'Makefile', line 7)
+CFLAGS = -O3 -Wall -Werror
 # environment
 HOMEDRIVE = C:
 # environment
@@ -198,6 +206,8 @@ VSCODE_IPC_HOOK = \\.\pipe\8b78d1671a5a6e2574a8a7325e20870d-1.76.2-main-sock
 .RECIPEPREFIX := 
 # automatic
 <F = $(notdir $<)
+# makefile (from 'Makefile', line 9)
+DEPS = 
 # environment
 VSCODE_CRASH_REPORTER_SANDBOXED_HINT = 1
 # default
@@ -210,14 +220,17 @@ SESSIONNAME = Console
 CLOUDSDK_METRICS_ENVIRONMENT = cloudcode.vscode
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs notintermediate shell-export archives jobserver output-sync load
-# makefile (from 'Makefile', line 4)
+# makefile (from 'Makefile', line 5)
 TEST_SRC = test_card_reader.c card_reader.c safeinput.c
 # environment
-PROCESSOR_REVISION = 6001
+PRO 
+CESSOR_REVISION = 6001
+# makefile (from 'Makefile', line 10)
+OBJ_CODE = 
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
-# Load=103/1024=10%, Rehash=0, Collisions=12/147=8%
+# Load=109/1024=11%, Rehash=0, Collisions=9/145=6%
 
 # Pattern-specific Variable Values
 
@@ -225,50 +238,55 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 
 # Directories
 
-# . (key c:/Users/jp_mo/Automotive C/Inlamningsuppgift2, mtime 1680185471): 20 files, no impossibilities.
+# . (key c:/Users/jp_mo/Automotive C/Inlamningsuppgift2, mtime 1680198684): 21 files, no impossibilities.
 
-# 20 files, no impossibilities in 1 directories.
+# 21 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
-# No implicit rules.
+%.o: %.c
+#  recipe to execute (from 'Makefile', line 30):
+	$(CC) -c -o $@ $< $(CFLAGS)
 
+# 1 implicit rules, 0 (0.0%) terminal.
 # Files
 
-main.exe: main.c card_reader.c safeinput.c
+main.exe: main.o card_reader.o safeinput.o
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  Last modified 2023-03-30 16:11:11
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-03-30 19:51:24
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := main.exe
-# automatic
-# * := 
-# automatic
-# < := main.c
-# automatic
-# + := main.c card_reader.c safeinput.c
-# automatic
-# % := 
-# automatic
-# ^ := main.c card_reader.c safeinput.c
-# automatic
-# ? := main.c safeinput.c
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=5/17=29%
-#  recipe to execute (from 'Makefile', line 19):
-	$(CC) -o $@ $(CFLAGS) $(LDFLAGS) $(SRC) $(LIBS)
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 24):
+	$(CC) -o $@ $(CFLAGS) $(LDFLAGS) $(OBJ) $(LIBS)
 
 # Not a target:
 card_reader.c:
 #  Implicit rule search has been done.
 #  File is secondary (prerequisite of .SECONDARY).
-#  Last modified 2023-03-24 01:27:15
+#  Last modified 2023-03-30 19:51:16
 #  File has been updated.
 #  Successfully updated.
+
+safeinput.o: safeinput.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'safeinput'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-03-30 19:51:24
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+card_reader.o: card_reader.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'card_reader'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-03-30 19:51:24
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	$(CC) -c -o $@ $< $(CFLAGS)
 
 # Not a target:
 test_card_reader.c:
@@ -276,18 +294,18 @@ test_card_reader.c:
 #  Modification time never checked.
 #  File has not been updated.
 
-test_main.exe: test_card_reader.c card_reader.c safeinput.c
+test_main.exe: test_card_reader.o card_reader.o safeinput.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 22):
-	$(CC) -o $@ $(CFLAGS) $(LDFLAGS) $(TEST_SRC) $(LIBS)
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) -o $@ $(CFLAGS2) $(LDFLAGS) $(TEST_OBJ) $(LIBGTEST)
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
 #  File is secondary (prerequisite of .SECONDARY).
-#  Last modified 2023-03-30 15:34:29
+#  Last modified 2023-03-30 19:06:06
 #  File has been updated.
 #  Successfully updated.
 
@@ -304,11 +322,17 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 25):
-	rm -f $(PROG) $(TEST_PROG)
+#  recipe to execute (from 'Makefile', line 33):
+	rm -f $(PROG) $(TEST_PROG) $(OBJ) $(TEST_OBJ)
 
 # Not a target:
 .DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+test_card_reader.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -319,15 +343,13 @@ all: main.exe
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+#  Successfully updated.
 
 # Not a target:
 main.c:
 #  Implicit rule search has been done.
 #  File is secondary (prerequisite of .SECONDARY).
-#  Last modified 2023-03-30 16:47:18
+#  Last modified 2023-03-30 16:50:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -335,7 +357,7 @@ test_card_reader.exe: test_card_reader.c card_reader.c safeinput.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 13):
+#  recipe to execute (from 'Makefile', line 18):
 	cc -o test_card_reader.exe -g test_card_reader.c card_reader.c safeinput.c
 
 test: test_card_reader.exe test_main.exe
@@ -343,14 +365,18 @@ test: test_card_reader.exe test_main.exe
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 16):
+#  recipe to execute (from 'Makefile', line 21):
 	./test_card_reader.exe
 
-# Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+main.o: main.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-03-30 18:59:06
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	$(CC) -c -o $@ $< $(CFLAGS)
 
 .PHONY: all clean test
 #  Implicit rule search has not been done.
@@ -358,19 +384,19 @@ test: test_card_reader.exe test_main.exe
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=0/45=0%
+# Load=18/1024=2%, Rehash=0, Collisions=0/57=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 26 / storage = 265 B / avg = 10 B
-# current buf: size = 8162 B / used = 265 B / count = 26 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 32 / storage = 312 B / avg = 9 B
+# current buf: size = 8162 B / used = 312 B / count = 32 / avg = 9 B
 
-# strcache performance: lookups = 60 / hit rate = 56%
+# strcache performance: lookups = 71 / hit rate = 54%
 # hash-table stats:
-# Load=26/8192=0%, Rehash=0, Collisions=0/60=0%
-# Finished Make data base on Thu Mar 30 16:47:56 2023
+# Load=32/8192=0%, Rehash=0, Collisions=0/71=0%
+# Finished Make data base on Thu Mar 30 20:10:25 2023
 
  
