@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "card_reader.h"
+#include "safeinput.h" // Include the new header
 
 void test_findCard() {
     CardsList testList;
@@ -17,16 +18,6 @@ void test_findCard() {
         printf("Test findCard: FAIL\n");
     }
 }
-
-/*void test_addCardToFile_and_readCardList() {
-    CardsList testList;
-    initCardsList(&testList);
-
-    Card testCard = {1213, false, "2019-10-19"};
-    addCardToFile(&testCard);
-
-    readCardList(&testList);
-*/
 
 void test_addCardToFile_and_readCardList() {
     CardsList testList;
@@ -49,3 +40,4 @@ int main() {
     test_addCardToFile_and_readCardList();
     return 0;
 }
+
