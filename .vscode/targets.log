@@ -6,7 +6,7 @@ C:\msys64\mingw64\bin\mingw32-make.exe all --print-data-base --no-builtin-variab
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Mar 30 20:10:25 2023
+# Make data base, printed on Thu Mar 30 21:49:27 2023
 
 # Variables
 
@@ -41,7 +41,7 @@ GOPATH = C:\Users\jp_mo\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_37284_MTIYIDETRQYKZRBU
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\LOCAL\crashpad_14668_DXWUMONPRJUHOMRJ
 # environment
 CLOUDSDK_METRICS_ENVIRONMENT_VERSION = 1.21.3
 # environment
@@ -55,7 +55,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\jp_mo\AppData\Roaming\Code\CachedData\ee2b180d582a7f601fa6ecfdad8d9fd269ab1884
+VSCODE_CODE_CACHE_PATH = C:\Users\jp_mo\AppData\Roaming\Code\CachedData\7f329fe6c66b0f86ae1574c2911b681ad5a45d63
 # environment
 LANG = C
 # default
@@ -78,8 +78,6 @@ POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Home
 CURDIR := c:/Users/jp_mo/Automotive C/Inlamningsuppgift2
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# environment
-VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -97,7 +95,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 37284
+VSCODE_PID = 14668
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -105,13 +103,13 @@ VSCODE_PID = 37284
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"sv-se","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"sv-se","availableLanguages":{},"_languagePackSupport":true}
 # default
 MAKE_HOST := Windows32
 # environment
 PROGRAMDATA = C:\ProgramData
 # default
-SHELL := sh.exe
+SHELL := C:/Program Files/Git/Bin/sh.exe
 # environment
 HOMEPATH = \Users\jp_mo
 # default
@@ -127,7 +125,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Users\jp_mo\AppData\Local\cloud-code\installer\google-cloud-sdk\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Users\jp_mo\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jp_mo\AppData\Local\Programs\Python\Python310\;C:\Program Files (x86)\ActiveState Komodo IDE 12\;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\ProgramData\chocolatey\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Go\bin;C:\Program Files\PowerShell\7\;C:\msys64\mingw64\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7-preview\preview;C:\Users\jp_mo\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\jp_mo\AppData\Local\Programs\Python\Python311\;C:\Users\jp_mo\AppData\Local\activestate\cache\bin;C:\Users\jp_mo\AppData\Local\ActiveState\StateTool\release;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\jp_mo\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1\bin;C:\Users\jp_mo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jp_mo\AppData\Local\GitHubDesktop\bin;C:\Users\jp_mo\.dotnet\tools;C:\Users\jp_mo\AppData\Local\atom\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.1\bin;;C:\Users\jp_mo\AppData\Local\Microsoft\WindowsApps;C:\Users\jp_mo\go\bin;C:\Users\jp_mo\AppData\Roaming\npm;C:\Users\jp_mo\.dotnet\tools;C:\Users\jp_mo\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\Google\Cloud SDK\google-cloud-sdk\bin
+PATH = C:\Users\jp_mo\AppData\Local\cloud-code\installer\google-cloud-sdk\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Users\jp_mo\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jp_mo\AppData\Local\Programs\Python\Python310\;C:\Program Files (x86)\ActiveState Komodo IDE 12\;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\ProgramData\chocolatey\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Go\bin;C:\Program Files\PowerShell\7\;C:\msys64\mingw64\bin;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\PowerShell\7-preview\preview;C:\Program Files\Git\Bin;C:\Users\jp_mo\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\jp_mo\AppData\Local\Programs\Python\Python311\;C:\Users\jp_mo\AppData\Local\activestate\cache\bin;C:\Users\jp_mo\AppData\Local\ActiveState\StateTool\release;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\jp_mo\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1\bin;C:\Users\jp_mo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jp_mo\AppData\Local\GitHubDesktop\bin;C:\Users\jp_mo\.dotnet\tools;C:\Users\jp_mo\AppData\Local\atom\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.1\bin;;C:\Users\jp_mo\AppData\Local\Microsoft\WindowsApps;C:\Users\jp_mo\go\bin;C:\Users\jp_mo\AppData\Roaming\npm;C:\Users\jp_mo\.dotnet\tools;C:\Users\jp_mo\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\Google\Cloud SDK\google-cloud-sdk\bin
 # environment
 COMPUTERNAME = HUAWEI-MATEBOOK
 # default
@@ -191,8 +189,6 @@ PROCESSOR_ARCHITECTURE = AMD64
 # environment
 PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1\bin;
 # environment
-EFC_10800 = 1
-# environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
@@ -201,11 +197,13 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\jp_mo\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\8b78d1671a5a6e2574a8a7325e20870d-1.76.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\8b78d1671a5a6e2574a8a7325e20870d-1.77.0-main-sock
 # default
 .RECIPEPREFIX := 
 # automatic
 <F = $(notdir $<)
+# environment
+EFC_9792 = 1
 # makefile (from 'Makefile', line 9)
 DEPS = 
 # environment
@@ -223,14 +221,13 @@ CLOUDSDK_METRICS_ENVIRONMENT = cloudcode.vscode
 # makefile (from 'Makefile', line 5)
 TEST_SRC = test_card_reader.c card_reader.c safeinput.c
 # environment
-PRO 
-CESSOR_REVISION = 6001
+PROCESSOR_REVISION = 6001
 # makefile (from 'Makefile', line 10)
 OBJ_CODE = 
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
-# Load=109/1024=11%, Rehash=0, Collisions=9/145=6%
+# Load=108/1024=11%, Rehash=0, Collisions=9/143=6%
 
 # Pattern-specific Variable Values
 
@@ -397,6 +394,6 @@ main.o: main.c
 # strcache performance: lookups = 71 / hit rate = 54%
 # hash-table stats:
 # Load=32/8192=0%, Rehash=0, Collisions=0/71=0%
-# Finished Make data base on Thu Mar 30 20:10:25 2023
+# Finished Make data base on Thu Mar 30 21:49:27 2023
 
  
